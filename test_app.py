@@ -1,4 +1,4 @@
-""" Flask App Unit Tests v1.0 """
+""" Flask App Unit Tests v2.0 """
 import pytest
 from app import app
 
@@ -31,3 +31,12 @@ def test_health_check_endpoint(client):
     rv = client.get("/health")
     assert rv.status_code == 200
     assert rv.get_json()["status"] == "healthy"
+
+
+def test_api_info_endpoint_v2(client):
+    rv = client.get("/api/info")
+    assert rv.status_code == 200
+    data = rv.get_json()
+    assert data["version"] == "2.0"
+    assert data["student_id"] == "2440666125"
+    assert data["student_name"] == "Laishisheng"
