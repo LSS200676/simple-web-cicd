@@ -4,7 +4,7 @@ from flask import Flask, render_template_string
 app = Flask(__name__)
 
 STUDENT_ID = "2440666125"
-STUDENT_NAME = "赖石生"
+STUDENT_NAME = "Laishisheng"
 APP_VERSION = "1.0"
 
 HTML_TEMPLATE = """

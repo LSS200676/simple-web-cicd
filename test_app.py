@@ -24,7 +24,7 @@ def test_index_contains_student_info(client):
     rv = client.get("/")
     data = rv.data.decode("utf-8")
     assert "2440666125" in data
-    assert "赖石生" in data
+    assert "Laishisheng" in data
 
 
 def test_health_check_endpoint(client):
