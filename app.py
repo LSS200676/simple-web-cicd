@@ -4,7 +4,7 @@ from flask import Flask, render_template_string, jsonify
 app = Flask(__name__)
 
 STUDENT_ID = "2440666125"
-STUDENT_NAME = "Laishisheng"
+STUDENT_NAME = "赖石生"
 APP_VERSION = "2.0"
 
 HTML_TEMPLATE = """
